@@ -1,9 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Gomoja Radu | Project Manager ,SEO , Digital Marketing specialist</title>
+	<meta name="description" content="This is my CV webpage , i am learning front-end , how to do a good SEO and how to improve my skills. My name is Gomoja Radu and i'm at the beginning of the way.">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+
+	<!-- Twitter Card data -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@publisher_handle">
+	<meta name="twitter:title" content="Page Title">
+	<meta name="twitter:description" content="Page description less than 200 characters">
+	<meta name="twitter:creator" content="@author_handle">
+	<!-- Twitter summary card with large image must be at least 280x150px -->
+	<meta name="twitter:image:src" content="http://www.example.com/image.jpg">
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="Gomoja Radu | Project Manager ,SEO , Digital Marketing specialist" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="www.Gomojaradu.com" />
+	<meta property="og:image" content="og-img.PNG" />
+	<meta property="og:description" content="This is my CV webpage , i am learning front-end , how to do a good SEO and how to improve my skills. My name is Gomoja Radu and i'm at the beginning of the way." />
+	<meta property="fb:admins" content="Facebook numberic ID" />
+	<meta name="robots" content="index, follow">
+
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- Facebook Pixel Code -->
+	<script>
+	  !function(f,b,e,v,n,t,s)
+	  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	  n.queue=[];t=b.createElement(e);t.async=!0;
+	  t.src=v;s=b.getElementsByTagName(e)[0];
+	  s.parentNode.insertBefore(t,s)}(window, document,'script',
+	  'https://connect.facebook.net/en_US/fbevents.js');
+	  fbq('init', '{your-pixel-id-goes-here}');
+	  fbq('track', 'PageView');
+	</script>
+	<noscript>
+	  <img height="1" width="1" style="display:none" 
+	       src="https://www.facebook.com/tr?id={your-pixel-id-goes-here}&ev=PageView&noscript=1"/>
+	</noscript>
+	<!-- End Facebook Pixel Code -->
 
 </head>
 <body>
@@ -12,11 +56,16 @@
 			<div class="nav-brand">
 				<a href="#">Gomoja Radu</a>
 			</div>
+			<div class="hamburger" id="hamburgerid">
+					<div class="hamb hamb-1"></div>
+					<div class="hamb hamb-2"></div>
+					<div class="hamb hamb-3"></div>
+				</div>
 			<div class="nav-links">
 				<ul>
-					<li><a href="">About Me</a></li>
-					<li><a href="">Experience</a></li>
-					<li><a href="">Contact Me</a></li>
+					<li><a href="#description-id">About Me</a></li>
+					<li><a href="#experience-link">Experience</a></li>
+					<li><a href="#contact-me">Contact Me</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -28,7 +77,7 @@
 				<div class="info-details">
 					<div class="details name">
 						<h1>Gomoja Radu</h1>
-						<h3>Project Manager & SEO / Digital Marketing</h3>
+						<h2>Project Manager & SEO / Digital Marketing</h2>
 					</div>
 					<div class="details Phone">
 						<p class="details-title">Phone:</p>
@@ -48,14 +97,14 @@
 					</div>
 				</div>
 				<div class="social">
-					<a href="">LinkedIn</a>
-					<a href="">Facebook</a>
-					<a href="">Twitter</a>
-					<a href="">Instagram</a>
+					<a href="https://www.linkedin.com/in/gomoja-radu-3a1632174?trk=people-guest_profile-result-card_result-card_full-click" class="social-in-fb" target="_blank"><i class="fa fa-linkedin-square" style="font-size:24px"></i><span>Linkedin</span></a>
+					<a href="https://www.facebook.com/radu.gomoja?ref=bookmarks" class="social-in-fb" target="_blank"><i class="fa fa-facebook-square" style="font-size:24px"></i><span>Facebook</span></a>
+					<a href="" target="_blank"><i class="fa fa-twitter-square" style="font-size:24px"></i><span>Twitter</span></a>
+					<a href="" target="_blank"><i class="fa fa-instagram" style="font-size:24px"></i><span>Instagram</span></a>						
 				</div>
 			</div>
 		</div>
-		<div class="my_description">
+		<div class="my_description" id="description-id">
 			<h3>Hello! I'm Radu</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -65,9 +114,114 @@
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</div>
 	</header>
-
-	<footer>
-		
+	<div class="experience" id="experience-link">
+		<h3 class="experience-title">My Experience</h3>
+		<div class="wrapper-bg" id="wrapid">
+			<div class="experience-wrapper">
+				<div class="experience-period">
+					<div class="period experience-pm">
+						<div class="experience-date">2019 - Present</div>
+						<div class="experience-position">Project Manager</div>
+						<div class="experience-company">Xairo</div>
+					</div>
+					<div class="period experience-logistics">
+						<div class="experience-date">2018 - 2019</div>
+						<div class="experience-position">Logistics Manager</div>
+						<div class="experience-company">Straus.md</div>
+					</div>
+					<div class="period experience-dispatcher">
+						<div class="experience-date">2016 - 2018</div>
+						<div class="experience-position">Logistics Dispatcher</div>
+						<div class="experience-company">Straus.md</div>
+					</div>
+				</div>
+				<div class="experience-separate">
+					
+				</div>
+				<div class="experience-post">
+					<div class="period pm-details">I started in <span>November</span> as Project Manager Assistant . This role combines SEO , Digital Marketing and Execution skills . </div>
+					<div class="period logistics-details">I was promoted in <span>April</span> - 2018 . I managed a team of 40 drivers and 3 Dispatchers . I had to control the process from the start of client's order until it is delivered by the driver. </div>
+					<div class="period dispatcher-details">I was a dispatcher , i had to give orders to the drivers , knowing logistics very well. </div>
+				</div>
+			</div>
+			<div class="skills" id="skillsid">
+				<div>	
+					<h3 class="experience-title">My Skills</h3>	
+				</div>
+				<div class="skills-wrapper">
+					<div class="skills-seo">
+						<div class="line-description">
+							<div class="line-title">SEO</div>
+							<div class="line-percentage">0%</div>
+						</div>
+						<div class="line">
+							<div class="line-red " id="redl4">	
+							</div>
+						</div>
+					</div>
+					<div class="skills-html">
+						<div class="line-description">
+							<div class="line-title">HTML</div>
+							<div class="line-percentage">0%</div>
+						</div>
+						<div class="line">
+							<div class="line-red " id="redl">	
+							</div>
+						</div>
+					</div>
+					<div class="skills-css">
+						<div class="line-description">
+							<div class="line-title">CSS</div>
+							<div class="line-percentage">0%</div>
+						</div>
+						<div class="line">
+							<div class="line-red " id="redl2">	
+							</div>
+						</div>
+					</div>
+					<div class="skills-js">
+						<div class="line-description">
+							<div class="line-title">Java Script</div>
+							<div class="line-percentage">0%</div>
+						</div>
+						<div class="line">
+							<div class="line-red " id="redl3">	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			
+	</div>
+	<footer class="footer" id="contact-me">
+		<div class="footer-wrapper">
+			<div class="talk">
+				<div class="talk-title-space">
+					<h2 class="talk-title">Let's Talk</h2>	
+				</div>
+				<div class="talk-label">
+					<label>
+						<input class="cv-name" type="text" name="Name" placeholder="Full Name">
+					</label>
+					<label>
+						<input class="cv-mail" type="Email" name="Email" placeholder="Email">
+					</label>
+					<label>
+						<input class="cv-message" type="textarea" name="Email" placeholder="Message">
+					</label>
+					<label id="cv-btn-lb">
+						<input id="cv-btn" type="button" name="Send" value="SEND">
+					</label>
+				</div>
+			</div>
+			<div class="cv">
+				<div class="cv-download">
+					<a href=""><span class="cv-text">Download CV</span></a>
+				</div>
+			</div>
+		</div>
 	</footer>
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
