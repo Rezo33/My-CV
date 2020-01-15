@@ -2,7 +2,7 @@
 
 var divSkills = document.getElementById("skillsid");
 var divRed = document.getElementById("redl");
-var wrapp = document.getElementById("wrapid");
+var wrapp = document.getElementById("skillsid");
 let isInited = false ;
 let percentage = document.getElementsByClassName("line-percentage");
 let a = percentage[0].innerText ;
@@ -15,8 +15,13 @@ let d =  percentage[3].innerText ;
 let numPercentageD =30;
 
 
-wrapp.addEventListener('mouseover', function(){
-		if (!isInited) {
+
+
+document.addEventListener("scroll", inView);
+
+function inView() {
+    if (wrapp.getBoundingClientRect().top <= window.innerHeight) {
+        if (!isInited) {
 			moveh();
 			movec();
 			movej();
@@ -24,8 +29,10 @@ wrapp.addEventListener('mouseover', function(){
 		}
 
 		isInited = true;
-})
-
+       
+    }
+}
+ 
 
 function moves() {
   var elem = document.getElementById("redl4");  

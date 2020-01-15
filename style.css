@@ -547,6 +547,10 @@ header{
         margin: 3px 0;
     }
 
+    .info-details{
+        padding-top: 20px;
+    }
+
     .social{
         flex-wrap: wrap;
         justify-content: space-between;
