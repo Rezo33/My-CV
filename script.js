@@ -113,7 +113,8 @@ function movej() {
 
 	function showNavb(){
 		if(!active){
-			navb.style.maxHeight = '200px';
+			/*navb.style.maxHeight = '200px';*/
+			navb.style.height = 'auto';
 			active = true ;
 			navl.style.display='block'; 
 		}
