@@ -130,12 +130,12 @@ header{
 }
 
 .details h1{
-	border-left:1px solid red;
+	border-left:3px solid red;
 	padding-left: 20px;
 }
 
 .details h2{
-	border-bottom:1px solid red;
+	border-bottom:3px solid red;
 	padding-bottom: 20px;
 	width: 91%;
 }
@@ -484,6 +484,20 @@ header{
 }
 
 @media only screen and (max-width: 700px) {
+
+    .main{
+        padding: 0;
+    }
+
+    .main-info{
+        width: 100%;
+    }
+
+    .info-foto {
+        width: 100%;
+    }
+
+
     .nav-bar{
         width: 100%;
         height: auto;
