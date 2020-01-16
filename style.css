@@ -17,7 +17,7 @@ header{
     -moz-box-shadow: inset 0 0 10px rgb(224, 238, 255);
     -webkit-box-shadow: inset 0 0 10px rgb(224, 238, 255);
     box-shadow: inset 0 0 10px rgb(224, 238, 255);
-    background-color: rgb(250, 253, 255);
+    background-color: rgb(0, 0, 0);
 }
 
 .nav-brand{
@@ -33,7 +33,7 @@ header{
 	font-family: 'Raleway', sans-serif;
 	font-size: 120%;
 	text-transform: uppercase;
-	color:#000;
+	color:#FFF;
 	padding-left: 20px;
 
 }
@@ -70,10 +70,9 @@ header{
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     transition: color 0.4s ease 0s;
-    color: #182153;
+    color: #FFF;
     padding: 0 20px;
-    border-bottom: 1px solid gray;
-    padding-bottom: 10px;
+
 }
 
 .nav-links ul li a:hover{
@@ -114,6 +113,7 @@ header{
 	height: 100%;
 	object-fit: cover;
     object-position: right;
+    display: none;
 }
 
 .info-details {
@@ -122,8 +122,9 @@ header{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background: rgba(255,255,255,0.8);
+    background: rgba(0,0,0,0.8);
     min-width: 400px;
+    color: white;
 }
 
 .details{
@@ -523,8 +524,13 @@ header{
         display: none;
         align-items: center;
         justify-content: center;
-}
+    }
 
+    .nav-links ul li a{
+        border-bottom: 1px solid #FF0000;
+        padding-bottom: 10px;
+    }
+    
     .nav-links ul{
         flex-direction: column;
         align-items: center;
@@ -556,7 +562,7 @@ header{
     .hamb{
         width: 35px;
         height: 5px;
-        background-color: #333;
+        background-color: #ff0000;
         margin: 3px 0;
     }
 
